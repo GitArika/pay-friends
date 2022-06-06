@@ -4,7 +4,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 100vh;
 }
 
 .forms {
@@ -30,12 +29,19 @@
   }
 
   .login-image {
-    width: 250px;
-    height: 217px;
+    width: 320px;
+    height: 277px;
+    padding: 50px;
+    margin-top: 20px;
+    background: none;
   }
 
   .container {
+    flex-direction: column;
   }
+}
+
+@media (max-width: 400px) {
 }
 
 .container {

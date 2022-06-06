@@ -1,6 +1,10 @@
-:host {
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
   justify-self: center;
   align-self: center;
+  padding: 0;
 }
 
 .login-logo {
@@ -122,12 +126,9 @@ input {
 }
 
 .login-form {
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  min-width: 540px;
 }
 
 .signup {
@@ -177,27 +178,30 @@ input {
 }
 
 @media (max-width: 1025px) {
-  .login-cadastrar {
-    margin-bottom: 50px;
-  }
-
   .login-form {
     padding-top: 100px !important;
   }
 }
 
-@media (max-widh: 400px) {
+@media (max-width: 400px) {
+  .password-eye {
+    margin-right: 15px !important;
+  }
   .login-cadastrar {
     width: 230px;
-    align-self: baseline;
+    align-self: center;
   }
 
   .login-title {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .login-form {
     padding: 0;
+  }
+
+  .signup > label:nth-child(1) {
+    align-self: center;
   }
 }
 

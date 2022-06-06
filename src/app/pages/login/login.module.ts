@@ -4,9 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { LoginComponent } from './login.component';
 import { LoginFormValidator } from '../../services/validators/login.form.validator';
-import { LoginFormModule } from 'src/app/components/molecules/loginform/login.form.module';
+import { LoginFormModule } from 'src/app/components/organisms/loginform/login.form.module';
 
-import { SignupModule } from 'src/app/components/molecules/signup/singup.module';
+import { SignupModule } from 'src/app/components/organisms/signup/singup.module';
 
 const routes: Routes = [
   {
