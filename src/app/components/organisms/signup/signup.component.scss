@@ -1,6 +1,4 @@
 .container {
-  height: 100%;
-  width: 100%;
   display: flex;
   justify-self: center;
   align-self: center;
@@ -204,6 +202,10 @@ input {
 }
 
 @media (max-width: 400px) {
+  .container {
+    margin-left: 90px;
+  }
+
   .password-eye {
     margin-right: 115px;
   }
@@ -214,6 +216,19 @@ input {
 
   input {
     max-width: 230px !important;
+  }
+
+  .back-to-login {
+    width: 230px;
+    align-self: center;
+  }
+
+  .signup > label:nth-child(1) {
+    margin-left: 40px;
+  }
+
+  .signup-title {
+    font-size: 18px;
   }
 }
 
