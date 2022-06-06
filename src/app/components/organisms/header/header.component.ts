@@ -5,7 +5,7 @@ import {
   Renderer2,
   ViewChild,
 } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth/auth.service';
 import { environment } from 'src/environments/environment';
 
@@ -49,6 +49,12 @@ export class HeaderComponent implements OnInit {
   }
 
   profile() {
+    console.log(this.router.url);
+    if (String(this.router.url).includes('profile') && this.openMenu) {
+      console.log('close menu...');
+      this.openMenu(false);
+      return;
+    }
     this.router.navigate([
       `${environment.Routes.profile}/${this.authService.id}`,
     ]);

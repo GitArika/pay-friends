@@ -1,11 +1,8 @@
-:host {
+.header-container {
   min-height: 80px;
   max-height: 160px;
   min-width: 580px;
   max-width: 100%;
-}
-
-.header-container {
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -50,7 +47,7 @@
     height: 30px;
   }
   .header-user-avatar {
-    display: initial;
+    display: flex;
     opacity: 1;
     width: 45px;
     height: 45px;
@@ -72,8 +69,9 @@
     cursor: pointer;
     display: flex;
     flex: 1;
-    margin-top: 80px;
-    margin-right: 110px;
+    margin-top: 45px;
+    margin-right: 115px;
+    width: max-content;
   }
 
   .profile-label {
@@ -82,6 +80,10 @@
     flex: 1;
     margin-top: 10px;
     margin-right: 100px;
+  }
+
+  .header-user-avatar {
+    margin-right: 200px;
   }
 
   .header-menu {
@@ -98,7 +100,7 @@
   display: none;
   position: absolute;
   right: 0;
-  margin-top: 45px;
+  margin-top: 55px;
   margin-right: 45px;
   width: 0px;
   height: 0px;
@@ -112,6 +114,14 @@
 
 .profile-label {
   display: none;
+}
+
+.profile-label:hover {
+  text-decoration: underline;
+}
+
+.logout-label:hover {
+  text-decoration: underline;
 }
 
 .header-user-avatar {
@@ -136,4 +146,29 @@ label {
   height: 0;
   width: 0;
   opacity: 0;
+}
+
+@media (max-width: 600px) {
+  .header-user-avatar {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header-expanded {
+    .header-user-avatar {
+      margin-right: 20px;
+    }
+
+    .profile-label {
+      margin-right: -80px;
+    }
+
+    .logout-label {
+      margin-right: -66px !important;
+    }
+
+    .logout {
+      margin-right: -135px !important;
+    }
+  }
 }
