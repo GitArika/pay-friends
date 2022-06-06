@@ -1,0 +1,52 @@
+.container {
+  background: #eeeeee;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.forms {
+  width: max-content;
+  height: max-content;
+  padding-right: 150px;
+  margin-left: 150px;
+}
+
+.login-image {
+  background: #fff;
+  padding-top: 27vh;
+  padding-bottom: 27vh;
+  padding-right: 27vw;
+}
+
+@media (max-width: 1025px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .login-image {
+    width: 250px;
+    height: 217px;
+  }
+
+  .container {
+  }
+}
+
+.container {
+}
+
+app-login-form {
+  margin-right: 50px;
+}
+
+@media (max-width: 400px) {
+  app-login-form {
+    margin-right: 0;
+  }
+}

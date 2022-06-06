@@ -1,0 +1,139 @@
+:host {
+  min-height: 80px;
+  max-height: 160px;
+  min-width: 580px;
+  max-width: 100%;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  transition: height 0.4s ease;
+
+  background-color: #002d69;
+  padding: 20px 40px;
+
+  height: 80px;
+  min-width: 580px;
+}
+
+.row {
+  display: none;
+}
+
+.column {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header-expanded {
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: flex-end;
+  }
+
+  .column {
+    display: flex;
+  }
+
+  height: 160px;
+  .logout {
+    display: flex;
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+  }
+  .header-user-avatar {
+    display: initial;
+    opacity: 1;
+    width: 45px;
+    height: 45px;
+  }
+
+  label {
+    right: 0;
+    height: 20px;
+    width: fit-content;
+    font-size: 20px;
+    opacity: 1;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    color: #fff;
+    position: absolute;
+  }
+
+  .logout-label {
+    cursor: pointer;
+    display: flex;
+    flex: 1;
+    margin-top: 80px;
+    margin-right: 110px;
+  }
+
+  .profile-label {
+    cursor: pointer;
+    display: flex;
+    flex: 1;
+    margin-top: 10px;
+    margin-right: 100px;
+  }
+
+  .header-menu {
+    display: none;
+  }
+}
+
+.header-menu {
+  cursor: pointer;
+}
+
+.logout {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  right: 0;
+  margin-top: 45px;
+  margin-right: 45px;
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  color: #fff;
+}
+
+.logout-label {
+  display: none;
+}
+
+.profile-label {
+  display: none;
+}
+
+.header-user-avatar {
+  display: none;
+  cursor: pointer;
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.header-logo {
+  cursor: pointer;
+  width: 137px;
+  height: 29px;
+  justify-self: flex-start;
+}
+
+label {
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}

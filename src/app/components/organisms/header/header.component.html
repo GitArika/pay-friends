@@ -1,0 +1,42 @@
+<div #header class="header-container">
+  <img
+    (click)="openMenu('false')"
+    (click)="dashboard()"
+    class="header-logo"
+    src="../../../../assets/logo-header.svg"
+    title="PayFriends Dashboard"
+    alt="Pay Friends application header logo"
+  />
+
+  <img
+    (click)="openMenu('true')"
+    class="header-menu"
+    src="../../../../assets/menu.svg"
+    title="Menu"
+    alt="Menu"
+  />
+  <div class="column">
+    <div class="row">
+      <label (click)="profile()" class="profile-label" for="Perfil"
+        >Perfil</label
+      >
+      <img
+        (click)="profile()"
+        class="header-user-avatar"
+        src="../../../../assets//profile.svg"
+        alt="User avatar"
+        title="Perfil"
+      />
+    </div>
+    <div class="row">
+      <label class="logout-label" for="Sair">Sair</label>
+      <img
+        (click)="logout()"
+        class="logout"
+        src="../../../../assets//exit.png"
+        alt="logout"
+        title="Sair"
+      />
+    </div>
+  </div>
+</div>
