@@ -49,9 +49,8 @@ export class HeaderComponent implements OnInit {
   }
 
   profile() {
-    console.log(this.router.url);
     if (String(this.router.url).includes('profile') && this.openMenu) {
-      console.log('close menu...');
+      ('close menu...');
       this.openMenu(false);
       return;
     }

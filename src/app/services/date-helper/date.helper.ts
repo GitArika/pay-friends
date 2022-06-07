@@ -9,10 +9,27 @@ export class DateHelper {
     const day = date.substring(0, 2);
     const month = date.substring(3, 5);
     const year = date.substring(6, 10);
-    const hour = date.substring(11, 13);
+    let hour = date.substring(11, 13);
+
+    if (Number(hour) - 3 < 0) {
+      if (hour == '02') hour = '23';
+      if (hour == '01') hour = '22';
+      if (hour == '00') hour = '21';
+    } else {
+      hour = String(Number(hour) - 3);
+
+      hour = hour.length == 1 ? `0${hour}` : hour;
+    }
+
     const minute = date.substring(14, 16);
 
-    return new Date(`${month}-${day}-${year} ${hour}:${minute}`);
+    return new Date(
+      Number(year),
+      Number(month),
+      Number(day),
+      Number(hour),
+      Number(minute),
+    );
   }
 
   /**
@@ -28,6 +45,10 @@ export class DateHelper {
       if (hour == '02') hour = '23';
       if (hour == '01') hour = '22';
       if (hour == '00') hour = '21';
+    } else {
+      hour = String(Number(hour) - 3);
+
+      hour = hour.length == 1 ? `0${hour}` : hour;
     }
 
     const minute = String(date).substring(14, 16);

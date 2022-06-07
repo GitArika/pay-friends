@@ -93,8 +93,9 @@ export class EditDialogComponent implements OnInit {
     this.renderer.addClass(element, 'invalid');
   }
 
-  datePickerChanges(event: string) {
+  datePickerChanges(event: any) {
     const date = this.dateHelper.convert(event);
+
     this.form.setValue({ ...this.form.value, date });
 
     this.validate('picker');

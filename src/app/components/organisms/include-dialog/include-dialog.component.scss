@@ -177,3 +177,17 @@ app-date {
   min-height: 18px;
   margin-left: 10px;
 }
+
+@media (max-width: 600px) {
+  .modal-content {
+    position: relative;
+    margin: 15px auto;
+    padding: 10px;
+    width: fit-content;
+    background: #fff;
+  }
+
+  .row > input {
+    max-width: 230px !important;
+  }
+}

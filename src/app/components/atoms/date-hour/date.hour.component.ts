@@ -2,10 +2,8 @@ import {
   Component,
   EventEmitter,
   Input,
-  OnChanges,
   OnInit,
   Output,
-  SimpleChanges,
   ViewChild,
 } from '@angular/core';
 import { DatePickerDirective, IDatePickerConfig } from 'ng2-date-picker';

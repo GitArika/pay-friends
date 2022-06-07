@@ -12,7 +12,6 @@ import { ToastService } from 'angular-toastify';
 import { DatePickerDirective, IDatePickerConfig } from 'ng2-date-picker';
 import { DatePickerDefault } from 'src/app/constants/date.picker.default';
 import { PaymentFactory } from 'src/app/factorys/payment.factory';
-import { ICreatePayment } from 'src/app/interfaces/IPayment';
 import { DateHelper } from 'src/app/services/date-helper/date.helper';
 import { PaymentsService } from 'src/app/services/payments/payments.service';
 import { IncludeValidator } from 'src/app/services/validators/include.validator';
@@ -96,8 +95,9 @@ export class IncludeDialogComponent implements OnInit {
     this.renderer.addClass(element, 'invalid');
   }
 
-  datePickerChanges(event: string) {
+  datePickerChanges(event: any) {
     const date = this.dateHelper.convert(event);
+
     this.payment.setValue({ ...this.payment.value, date });
 
     this.validate('picker');
