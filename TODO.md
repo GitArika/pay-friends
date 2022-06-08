@@ -40,17 +40,12 @@
 
 Nível: Pleno
 
-Enhancements:
+## Enhancements by feedback:
 
 ✅ Use Enviroment Variables
-Use SVG
-✅ Use BEM as a partner css
+✅ Use SVG
 ✅ Use Global stylization
 ✅ Use lint
-Responsive screens
+✅ Responsive screens
 Unit test
 Tests e2e
-
-# TODO
-
-WIP - Header component responsivo.
