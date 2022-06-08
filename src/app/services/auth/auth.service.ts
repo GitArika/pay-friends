@@ -65,7 +65,10 @@ export class AuthService implements CanActivate {
   }
 
   signup(user: ICreateUser) {
-    return this.http.post<IAuth>(`${this.baseUrl}/signup`, user);
+    const safeUser = { ...user };
+    delete safeUser['passwordConfirmation'];
+
+    return this.http.post<IAuth>(`${this.baseUrl}/signup`, safeUser);
   }
 
   getUser(id: number): Observable<HttpResponse<IUser>> {

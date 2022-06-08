@@ -1,8 +1,7 @@
 .header-container {
   min-height: 80px;
   max-height: 160px;
-  min-width: 580px;
-  max-width: 100%;
+  min-width: 565px;
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -13,7 +12,6 @@
   padding: 20px 40px;
 
   height: 80px;
-  min-width: 580px;
 }
 
 .row {
@@ -62,15 +60,14 @@
     font-weight: 500;
     font-family: 'Montserrat';
     color: #fff;
-    position: absolute;
   }
 
   .logout-label {
     cursor: pointer;
     display: flex;
     flex: 1;
-    margin-top: 45px;
-    margin-right: 115px;
+    margin-top: 23px;
+    margin-right: 20px;
     width: max-content;
   }
 
@@ -79,11 +76,7 @@
     display: flex;
     flex: 1;
     margin-top: 10px;
-    margin-right: 100px;
-  }
-
-  .header-user-avatar {
-    margin-right: 200px;
+    margin-right: 20px;
   }
 
   .header-menu {
@@ -98,10 +91,8 @@
 .logout {
   cursor: pointer;
   display: none;
-  position: absolute;
-  right: 0;
-  margin-top: 55px;
-  margin-right: 45px;
+  margin-top: 27px;
+  margin-right: 5px;
   width: 0px;
   height: 0px;
   opacity: 0;
@@ -154,21 +145,21 @@ label {
     height: 30px;
   }
 
-  .header-expanded {
-    .header-user-avatar {
-      margin-right: 20px;
-    }
+  // .header-expanded {
+  //   .header-user-avatar {
+  //     margin-right: 20px;
+  //   }
 
-    .profile-label {
-      margin-right: -80px;
-    }
+  //   .profile-label {
+  //     margin-right: -80px;
+  //   }
 
-    .logout-label {
-      margin-right: -66px !important;
-    }
+  //   .logout-label {
+  //     margin-right: -66px !important;
+  //   }
 
-    .logout {
-      margin-right: -135px !important;
-    }
-  }
+  //   .logout {
+  //     margin-right: -135px !important;
+  //   }
+  // }
 }

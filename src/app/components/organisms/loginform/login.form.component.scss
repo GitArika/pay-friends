@@ -39,6 +39,7 @@ label {
 }
 
 input {
+  width: 328px;
   border-radius: 3px;
   border-color: rgba(0, 0, 0, 0.12);
   border-width: 1px;
@@ -211,7 +212,8 @@ input {
   }
 
   .login-entrar {
-    max-width: 230px;
+    min-width: 230px;
+    align-self: center;
   }
 
   .signup {

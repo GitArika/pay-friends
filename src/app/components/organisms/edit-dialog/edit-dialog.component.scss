@@ -179,11 +179,19 @@ app-date {
 }
 
 @media (max-width: 600px) {
+  .modal {
+    height: 1000px;
+    width: 565px;
+  }
+
   .modal-content {
     position: relative;
-    margin: 15px auto;
+    margin: auto;
     padding: 10px;
-    width: fit-content;
-    background: #fff;
+    margin-top: 25px;
+  }
+
+  .row > input {
+    max-width: 230px !important;
   }
 }

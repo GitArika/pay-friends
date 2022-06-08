@@ -934,7 +934,7 @@
       "title": "Senior Cost Accountant",
       "value": 402.74,
       "isPayed": true,
-      "date": "2021-03-03T17:27:00.000Z",
+      "date": "2021-04-03T17:28:00.000Z",
       "id": 99
     },
     {
@@ -1514,13 +1514,22 @@
       "date": "2020-04-24T09:48:35Z",
       "image": "https://robohash.org/voluptasdolorut.png?size=150x150&set=set1",
       "isPayed": true
+    },
+    {
+      "name": "Ariel Evangelista",
+      "username": "Ariel",
+      "title": "Dentista",
+      "value": 120,
+      "isPayed": true,
+      "date": "2022-07-08T15:55:00.000Z",
+      "id": 160
     }
   ],
   "users": [
     {
       "nome": "usuario",
       "email": "usuario@gmail.com",
-      "password": "$2a$10$TNdHjtvN0983/YdKyTwJ2eWfd7g4LF.B/oZ.IsafVyZVavXqTsMyO",
+      "password": "$2a$10$MPh1gEWIE.KgIsUNVSp4jO8uKO4Q24g6ydiLgvoiprOzz.778D9Ci",
       "id": 0
     },
     {
@@ -1532,7 +1541,6 @@
     {
       "email": "ariel.evangelista@outlook.com",
       "password": "$2a$10$MPh1gEWIE.KgIsUNVSp4jO8uKO4Q24g6ydiLgvoiprOzz.778D9Ci",
-      "passwordConfirmation": "usuario",
       "nome": "Ariel",
       "id": 2
     }

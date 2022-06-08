@@ -1,7 +1,10 @@
 .container {
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-self: center;
   align-self: center;
+  padding: 0;
 }
 
 .signup-logo {
@@ -123,14 +126,9 @@ input {
 }
 
 .signup-form {
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  padding: 0px 106px;
-
-  min-width: 540px;
 }
 
 .signup {
@@ -202,16 +200,8 @@ input {
 }
 
 @media (max-width: 400px) {
-  .container {
-    margin-left: 90px;
-  }
-
   .password-eye {
-    margin-right: 115px;
-  }
-
-  .password-eye {
-    margin-right: 115px;
+    margin-right: 15px;
   }
 
   input {

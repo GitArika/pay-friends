@@ -11,16 +11,6 @@ export class DateHelper {
     const year = date.substring(6, 10);
     let hour = date.substring(11, 13);
 
-    if (Number(hour) - 3 < 0) {
-      if (hour == '02') hour = '23';
-      if (hour == '01') hour = '22';
-      if (hour == '00') hour = '21';
-    } else {
-      hour = String(Number(hour) - 3);
-
-      hour = hour.length == 1 ? `0${hour}` : hour;
-    }
-
     const minute = date.substring(14, 16);
 
     return new Date(
