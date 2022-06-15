@@ -9,15 +9,14 @@ import {
   ViewChild,
 } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { ToastService } from 'angular-toastify';
 
 import { AuthService } from 'src/app/services/auth/auth.service';
-import { CreateUserFactory } from 'src/app/factorys/create-user.factory';
-
 import { SignupValidator } from 'src/app/services/validators/signup.validator';
-import { ToastService } from 'angular-toastify';
+import { CreateUserFactory } from 'src/app/factorys/create.user.factory';
 import { ServerResponses } from 'src/app/constants/server.responses';
 import { Exceptions } from 'src/app/constants/exceptions';
-import { inputType } from 'src/app/enums/inputType';
+import { inputType } from 'src/app/enums/input.type.enum';
 
 @Component({
   selector: 'app-signup',

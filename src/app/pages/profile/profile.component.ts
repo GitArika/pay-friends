@@ -3,12 +3,13 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastService } from 'angular-toastify';
 import { Subscription } from 'rxjs';
-import { Exceptions } from 'src/app/constants/exceptions';
-import { CreateUserFactory } from 'src/app/factorys/create-user.factory';
-import { IUser } from 'src/app/interfaces/IUser';
+
+import { environment } from 'src/environments/environment';
 import { AuthService } from 'src/app/services/auth/auth.service';
 import { ProfileValidator } from 'src/app/services/validators/profile.validator';
-import { environment } from 'src/environments/environment';
+import { CreateUserFactory } from 'src/app/factorys/create.user.factory';
+import { IUser } from 'src/app/interfaces/IUser';
+import { Exceptions } from 'src/app/constants/exceptions';
 
 @Component({
   selector: 'app-profile',
@@ -21,7 +22,6 @@ export class ProfileComponent implements OnInit {
   public form: FormGroup = this.formBuilder.group(
     this.createUserFactory.create(),
   );
-  public passwordChange: boolean;
 
   constructor(
     private route: ActivatedRoute,

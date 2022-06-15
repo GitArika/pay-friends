@@ -934,7 +934,7 @@
       "title": "Senior Cost Accountant",
       "value": 402.74,
       "isPayed": true,
-      "date": "2021-04-03T17:28:00.000Z",
+      "date": "2021-04-03T17:30:00.000Z",
       "id": 99
     },
     {
@@ -1514,15 +1514,6 @@
       "date": "2020-04-24T09:48:35Z",
       "image": "https://robohash.org/voluptasdolorut.png?size=150x150&set=set1",
       "isPayed": true
-    },
-    {
-      "name": "Ariel Evangelista",
-      "username": "Ariel",
-      "title": "Dentista",
-      "value": 120,
-      "isPayed": true,
-      "date": "2022-07-08T15:55:00.000Z",
-      "id": 160
     }
   ],
   "users": [

@@ -4,15 +4,14 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { PaymentsService } from 'src/app/services/payments/payments.service';
 
+import { DashboardComponent } from './dashboard.component';
 import { HeaderModule } from 'src/app/components/organisms/header/header.module';
 import { FiltersModule } from 'src/app/components/molecules/filters/filters.module';
 import { PaginatorModule } from 'src/app/components/molecules/paginator/paginator.module';
 import { TableModule } from 'src/app/components/organisms/table/table.module';
-import { DeleteDialogModule } from 'src/app/components/organisms/delete-dialog/delete-dialog.module';
-import { IncludeDialogModule } from 'src/app/components/organisms/include-dialog/include-dialog.module';
-
-import { DashboardComponent } from './dashboard.component';
-import { EditDialogModule } from 'src/app/components/organisms/edit-dialog/edit-dialog.module';
+import { IncludeDialogModule } from 'src/app/components/organisms/include-dialog/include.dialog.module';
+import { EditDialogModule } from 'src/app/components/organisms/edit-dialog/edit.dialog.module';
+import { DeleteDialogModule } from 'src/app/components/organisms/delete-dialog/delete.dialog.module';
 
 const routes: Routes = [
   {

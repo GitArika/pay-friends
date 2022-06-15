@@ -12,63 +12,65 @@ import { ToastService } from 'angular-toastify';
 import { DatePickerDirective, IDatePickerConfig } from 'ng2-date-picker';
 import { DatePickerDefault } from 'src/app/constants/date.picker.default';
 import { PaymentFactory } from 'src/app/factorys/payment.factory';
-import { ICreatePayment, IPayment } from 'src/app/interfaces/IPayment';
 import { DateHelper } from 'src/app/services/date-helper/date.helper';
 import { PaymentsService } from 'src/app/services/payments/payments.service';
-import { EditValidator } from 'src/app/services/validators/edit.validator';
+import { IncludeValidator } from 'src/app/services/validators/include.validator';
 
 @Component({
-  selector: 'app-edit-dialog',
-  templateUrl: './edit-dialog.component.html',
-  styleUrls: ['./edit-dialog.component.scss'],
+  selector: 'app-include-dialog',
+  templateUrl: './include.dialog.component.html',
+  styleUrls: ['./include.dialog.component.scss'],
 })
-export class EditDialogComponent implements OnInit {
+export class IncludeDialogComponent implements OnInit {
   config: IDatePickerConfig = {
     ...DatePickerDefault,
   };
   @ViewChild('dateDirectivePicker') dpDayPicker: DatePickerDirective;
+
   @Input() modalState: boolean = true;
-  @Input() public payment: IPayment;
   @Output() onClose = new EventEmitter<boolean>();
-  public form: FormGroup;
+
+  public payment: FormGroup;
   public dateIsValid = true;
 
   constructor(
+    private paymentFactory: PaymentFactory,
     private paymentService: PaymentsService,
     private toastService: ToastService,
-    private editValidator: EditValidator,
+    private includeValidator: IncludeValidator,
     private renderer: Renderer2,
-    private dateHelper: DateHelper,
     private formBuilder: FormBuilder,
-    private paymentFactory: PaymentFactory,
+    private dateHelper: DateHelper,
   ) {}
 
   ngOnInit() {
-    this.form = this.formBuilder.group(this.paymentFactory.edit(this.payment));
+    this.payment = this.formBuilder.group(this.paymentFactory.create());
   }
 
   closeEvent(event?: HTMLElement) {
     if (event.className == 'modal' || event.className == 'close') {
+      this.payment = this.formBuilder.group(this.paymentFactory.create());
       this.onClose.emit(false);
     }
   }
 
   confirm() {
-    const validation = this.editValidator.isValid(this.form.value);
+    const validation = this.includeValidator.isValid(this.payment.value);
 
     if (!validation.valid) {
       this.invalidate(validation.key);
       return;
     }
 
-    this.paymentService.editPayment(this.form.value).subscribe(
+    this.paymentService.includePayment(this.payment.value).subscribe(
       (data) => {
-        this.toastService.info(`Pagamento editado com sucesso!`);
+        this.toastService.info(`Pagamento criado com sucesso!`);
 
+        this.payment = this.formBuilder.group(this.paymentFactory.create());
         this.onClose.emit(true);
       },
       (error) => {
-        this.toastService.error(`Ocorreu um erro ao editar o pagamento.`);
+        this.toastService.error(`Ocorreu um erro ao criar o pagamento.`);
       },
     );
   }
@@ -96,12 +98,8 @@ export class EditDialogComponent implements OnInit {
   datePickerChanges(event: any) {
     const date = this.dateHelper.convert(event);
 
-    this.form.setValue({ ...this.form.value, date });
+    this.payment.setValue({ ...this.payment.value, date });
 
     this.validate('picker');
-  }
-
-  formatedDate() {
-    return this.dateHelper.convertISO(this.payment.date);
   }
 }

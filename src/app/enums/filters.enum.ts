@@ -1,4 +1,4 @@
-export enum filtersEnum {
+export enum filters {
   username = 'usuário',
   name = 'nome',
   title = 'titulo',

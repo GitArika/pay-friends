@@ -9,16 +9,15 @@ import {
 } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
-
-import { AuthService } from 'src/app/services/auth/auth.service';
-
-import { LoginFormValidator } from 'src/app/services/validators/login.form.validator';
-import { CreateUserFactory } from 'src/app/factorys/create-user.factory';
 import { ToastService } from 'angular-toastify';
+
+import { environment } from 'src/environments/environment';
+import { AuthService } from 'src/app/services/auth/auth.service';
+import { LoginFormValidator } from 'src/app/services/validators/login.form.validator';
 import { ServerResponses } from 'src/app/constants/server.responses';
 import { Exceptions } from 'src/app/constants/exceptions';
-import { inputType } from 'src/app/enums/inputType';
-import { environment } from 'src/environments/environment';
+import { inputType } from 'src/app/enums/input.type.enum';
+import { CreateUserFactory } from 'src/app/factorys/create.user.factory';
 
 @Component({
   selector: 'app-login-form',

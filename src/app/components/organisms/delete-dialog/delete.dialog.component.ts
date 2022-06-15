@@ -6,8 +6,8 @@ import { PaymentsService } from 'src/app/services/payments/payments.service';
 
 @Component({
   selector: 'app-delete-dialog',
-  templateUrl: './delete-dialog.component.html',
-  styleUrls: ['./delete-dialog.component.scss'],
+  templateUrl: './delete.dialog.component.html',
+  styleUrls: ['./delete.dialog.component.scss'],
 })
 export class DeleteDialogComponent {
   @Input() modalState: boolean = true;

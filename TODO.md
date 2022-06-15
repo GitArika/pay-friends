@@ -47,5 +47,6 @@ Nível: Pleno
 ✅ Use Global stylization
 ✅ Use lint
 ✅ Responsive screens
+Header component enhancement
 Unit test
 Tests e2e

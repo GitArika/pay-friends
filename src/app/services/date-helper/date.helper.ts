@@ -5,21 +5,24 @@ export class DateHelper {
   /**
    * Necessary to integrate with ng2-date-picker
    */
-  convert(date: string): Date {
+  convert(date: string, hasHour: boolean = true): Date {
     const day = date.substring(0, 2);
     const month = date.substring(3, 5);
     const year = date.substring(6, 10);
-    let hour = date.substring(11, 13);
 
-    const minute = date.substring(14, 16);
+    if (hasHour) {
+      let hour = date.substring(11, 13);
+      const minute = date.substring(14, 16);
+      return new Date(
+        Number(year),
+        Number(month) - 1,
+        Number(day),
+        Number(hour),
+        Number(minute),
+      );
+    }
 
-    return new Date(
-      Number(year),
-      Number(month),
-      Number(day),
-      Number(hour),
-      Number(minute),
-    );
+    return new Date(Number(year), Number(month) - 1, Number(day));
   }
 
   /**

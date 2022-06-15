@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { filtersEnum } from 'src/app/enums/filtersEnum';
+import { filters } from 'src/app/enums/filters.enum';
 import { ISearchFilters } from 'src/app/interfaces/IFilters';
 import { DateHelper } from 'src/app/services/date-helper/date.helper';
 
@@ -14,7 +14,7 @@ export class FiltersComponent implements OnInit {
     searchField: 'username',
   };
   public placeholder: string = `Pesquisar por ${
-    filtersEnum[this.searchFilters.searchField]
+    filters[this.searchFilters.searchField]
   }`;
   public selectFilterState: boolean;
   public stringSearch = true;
@@ -34,7 +34,7 @@ export class FiltersComponent implements OnInit {
 
     this.searchFilters.searchField = searchField;
     this.placeholder = `Pesquisar por ${
-      filtersEnum[this.searchFilters.searchField]
+      filters[this.searchFilters.searchField]
     }`;
 
     this.changeInput();
@@ -65,7 +65,7 @@ export class FiltersComponent implements OnInit {
   }
 
   getLabel() {
-    return filtersEnum[this.searchFilters.searchField];
+    return filters[this.searchFilters.searchField];
   }
 
   changeInput() {
@@ -91,10 +91,10 @@ export class FiltersComponent implements OnInit {
       return;
     }
 
-    let date: any = this.dateHelper.convert(event);
-    date = date.toISOString().substring(0, 10);
+    let date = this.dateHelper.convert(event, false);
+    let search = date.toISOString().substring(0, 10);
 
-    this.searchFilters.searchString = date;
+    this.searchFilters.searchString = search;
     this.submit();
   }
 }
