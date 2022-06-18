@@ -21,8 +21,6 @@ A utilização do Angular e Node nas versões acima **é obrigatória**.
 - Na raiz do repositório, rode este comando `ng serve` para iniciar o servidor de desenvolvimento.
 - A Aplicação estará disponível na porta `http://localhost:4200/`
 
-<br/>
-
 ### **API**
 
 O projeto foi atualizado com a dependencia json-server-auth, trazendo mudanças a API.
