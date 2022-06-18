@@ -48,5 +48,6 @@ Nível: Pleno
 ✅ Use lint
 ✅ Responsive screens
 Header component enhancement
+Value filters should be replace.
 Unit test
 Tests e2e

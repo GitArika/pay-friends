@@ -204,10 +204,6 @@ input {
     margin-right: 15px;
   }
 
-  input {
-    max-width: 230px !important;
-  }
-
   .back-to-login {
     width: 230px;
     align-self: center;
@@ -225,17 +221,25 @@ input {
 @media (max-width: 400px) {
   .signup {
     label {
-      align-self: baseline;
+      align-self: center;
     }
   }
 
   .back-to-login {
     width: 230px !important;
-    align-self: baseline;
+    align-self: center;
   }
 
   .signup-entrar {
     width: 230px !important;
-    align-self: baseline;
+    align-self: center;
+  }
+}
+
+
+
+@media (max-width: 354px) {
+  input {
+    width: 100% !important;
   }
 }
