@@ -1,6 +1,6 @@
-# **Desafio Frontend PicPay**
+# **Desafio Frontend PicPay** 😀
 
-A melhor plataforma de pagamentos do mundo!
+**A melhor plataforma de pagamentos do mundo!** 
 
 ## Setup do projeto
 
@@ -8,27 +8,20 @@ A melhor plataforma de pagamentos do mundo!
 - Node: 12.20.2
 - Angular: 12.1.4
 
-A utilização do Angular e Node nas versões acima **é obrigatória**.
-
 ## Como Rodar?
 
-- Na raiz do repositório, rode este comando `ng serve` para iniciar o servidor de desenvolvimento.
-- A Aplicação estará disponível na porta `http://localhost:4200/`
+Instale todas as dependencias
+
+```npm install``` or ```yarn```
 
 ### **API**
 
-O projeto foi atualizado com a dependencia json-server-auth, trazendo mudanças a API.
+A API está atualizada com features de autenticação.
 
-### **Como Rodar?**
+```npm run api```
 
-Execute o comando `npm run api`
+### **Frontend**
 
-### **Login**
+Iniciar aplicação no navegador padrão.
 
-É possível logar-se no app com as seguintes credenciais:
-
-login: `usuario@gmail.com`
-<br/>
-senha: `usuario`
-
-Notas: Também foi implementado a feature de cadastrar-se.
+```npm start```
