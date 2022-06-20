@@ -1,14 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { DpDatePickerModule } from 'ng2-date-picker';
 
 import { DateHourComponent } from './date.hour.component';
 
-describe('DateComponent', () => {
+describe('DateHourComponent', () => {
   let component: DateHourComponent;
   let fixture: ComponentFixture<DateHourComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [DateHourComponent],
+      imports: [FormsModule, DpDatePickerModule]
     }).compileComponents();
   });
 

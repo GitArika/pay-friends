@@ -1,4 +1,7 @@
+import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ToastService } from 'angular-toastify';
+import { PaymentsService } from 'src/app/services/payments/payments.service';
 
 import { DeleteDialogComponent } from './delete.dialog.component';
 
@@ -9,6 +12,8 @@ describe('DeleteDialogComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [DeleteDialogComponent],
+      imports: [HttpClientModule],
+      providers: [PaymentsService, ToastService]
     }).compileComponents();
   });
 

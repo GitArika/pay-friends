@@ -1,4 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { DateHelper } from 'src/app/services/date-helper/date.helper';
+import { DateModule } from '../../atoms/date /date.module';
 
 import { FiltersComponent } from './filters.component';
 
@@ -9,6 +12,8 @@ describe('FiltersComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [FiltersComponent],
+      imports: [FormsModule, DateModule],
+      providers: [DateHelper]
     }).compileComponents();
   });
 

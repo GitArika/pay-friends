@@ -1,4 +1,4 @@
-# **Desafio Frontend PicPay** 😀
+# **Desafio Frontend PicPay 😀**  
 
 **A melhor plataforma de pagamentos do mundo!** 
 
@@ -8,11 +8,17 @@
 - Node: 12.20.2
 - Angular: 12.1.4
 
+## Como Testar?
+
+Execute os testes unitários
+
+```npm test```
+
 ## Como Rodar?
 
 Instale todas as dependencias
 
-```npm install``` or ```yarn```
+```npm install```
 
 ### **API**
 

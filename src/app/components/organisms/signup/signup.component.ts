@@ -2,7 +2,6 @@ import {
   Component,
   ElementRef,
   EventEmitter,
-  Inject,
   OnInit,
   Output,
   Renderer2,

@@ -21,4 +21,5 @@ describe('PaginatorComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
 });
