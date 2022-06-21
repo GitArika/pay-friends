@@ -15,6 +15,7 @@
 
 .login-image {
   background: #fff;
+  padding-left: 100px;
   padding-top: 27vh;
   padding-bottom: 27vh;
   padding-right: 27vw;
@@ -43,6 +44,7 @@
 @media (max-width: 840px) {
   .login-image {
     padding: 50px;
+    margin-left: 0px;
   }
 }
 

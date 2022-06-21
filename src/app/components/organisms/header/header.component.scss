@@ -1,6 +1,6 @@
 .header-container {
   min-height: 80px;
-  max-height: 160px;
+  max-height: 190px;
   min-width: 565px;
   display: flex;
   flex-direction: row;
@@ -19,10 +19,17 @@
 }
 
 .column {
-  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+}
+
+.row-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-self: flex-end;
+
 }
 
 .header-expanded {
@@ -33,11 +40,19 @@
     justify-self: flex-end;
   }
 
+  .header-menu {
+    margin-left: 90px;
+    margin-bottom: 10px;
+  }
+  
+
+
   .column {
     display: flex;
   }
 
-  height: 160px;
+  height: 190px;
+
   .logout {
     display: flex;
     opacity: 1;
@@ -79,9 +94,6 @@
     margin-right: 20px;
   }
 
-  .header-menu {
-    display: none;
-  }
 }
 
 .header-menu {
@@ -92,7 +104,6 @@
   cursor: pointer;
   display: none;
   margin-top: 27px;
-  margin-right: 5px;
   width: 0px;
   height: 0px;
   opacity: 0;
@@ -122,7 +133,6 @@
   height: 0px;
   opacity: 0;
   margin-top: 10px;
-  margin-right: 5px;
 }
 
 .header-logo {
@@ -144,22 +154,4 @@ label {
     width: 30px;
     height: 30px;
   }
-
-  // .header-expanded {
-  //   .header-user-avatar {
-  //     margin-right: 20px;
-  //   }
-
-  //   .profile-label {
-  //     margin-right: -80px;
-  //   }
-
-  //   .logout-label {
-  //     margin-right: -66px !important;
-  //   }
-
-  //   .logout {
-  //     margin-right: -135px !important;
-  //   }
-  // }
 }
