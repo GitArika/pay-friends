@@ -8,26 +8,25 @@
 - Node: 12.20.2
 - Angular: 12.1.4
 
-## Como Testar?
-
-Execute os testes unitários
-
-```npm test```
-
-## Como Rodar?
-
-Instale todas as dependencias
+## Instale todas as dependencias
 
 ```npm install```
 
-### **API**
+### **Testes unitários**
 
-A API está atualizada com features de autenticação.
+```npm test```
+
+### **API**
 
 ```npm run api```
 
 ### **Frontend**
 
-Iniciar aplicação no navegador padrão.
-
 ```npm start```
+
+
+### **About me**
+
+Meu nome é **Ariel Evangelista**, tenho 24 anos, sou desenvolvedor fullstack.
+
+Sou fascinado por melhoria de processos, cultura ágil e programação extrema.
