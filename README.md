@@ -2,6 +2,10 @@
 
 **A melhor plataforma de pagamentos do mundo!** 
 
+# Project Live
+
+![running project](https://media.giphy.com/media/aww6Udm34boxzFW9vX/giphy-downsized-large.gif)
+
 ## Setup do projeto
 
 - Angular CLI: 12.1.4
