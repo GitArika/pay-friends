@@ -50,7 +50,7 @@ export class AuthService implements CanActivate {
   }
 
   signin(auth: ISignin): Observable<IAuth> {
-    delete auth['passwordConfirmation;'];
+    delete auth['passwordConfirmation'];
 
     return this.http.post<IAuth>(`${this.baseUrl}/signin`, auth).pipe(
       tap({

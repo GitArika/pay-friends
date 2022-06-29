@@ -28,8 +28,8 @@ export class LoginFormComponent implements OnInit {
   public signinForm: FormGroup;
   @ViewChild('password') inputPassword: ElementRef;
 
-  public loading: boolean;
   public passwordVisibility: boolean = false;
+  public loading: boolean;
 
   @Output() onSignup: EventEmitter<boolean> = new EventEmitter<boolean>(false);
 

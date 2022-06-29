@@ -11,7 +11,7 @@ export class PaginatorComponent implements OnInit {
 
   pageOptions: number[] = [];
   pageSize: number = 0;
-  private _pages: number = 5;
+  private _pages: number = 0;
   private _selectedPage: number = 0;
 
   get pages(): number {
