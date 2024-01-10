@@ -1,4 +1,4 @@
-# **Desafio Frontend PicPay 😀**  
+# **PayFriends App 😀**  
 
 **A melhor plataforma de pagamentos do mundo!** 
 
@@ -20,17 +20,17 @@
 
 ```npm test```
 
-### **API**
+### Starting **API**
 
 ```npm run api```
 
-### **Frontend**
+### Starting **Frontend**
 
 ```npm start```
 
 
 ### **About me**
 
-Meu nome é **Ariel Evangelista**, tenho 24 anos, sou desenvolvedor fullstack.
+Meu nome é **Ariel Evangelista**, tenho 25 anos, sou desenvolvedor fullstack.
 
 Sou fascinado por melhoria de processos, cultura ágil e programação extrema.
