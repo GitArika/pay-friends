@@ -1,4 +1,4 @@
-# **PayFriends App 😀**  
+# **PayFriends App 💙**  
 
 **A melhor plataforma de pagamentos do mundo!** 
 
